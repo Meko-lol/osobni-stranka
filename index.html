@@ -35,11 +35,51 @@
 
     <section id="projekty" aria-labelledby="projekty-nadpis">
       <h2 id="projekty-nadpis">Projekty</h2>
-      <!-- TODO: alespoň tři položky, každá s obrázkem. Zkopírujte celý prvek article a upravte ho. -->
-      <article class="card">
-        <h3>TODO: název projektu</h3>
-        <p>TODO: stručný popis projektu.</p>
-      </article>
+      <div class="project-list">
+        <article class="card project">
+          <img src="img/wt-telemetrie.svg" width="320" height="180"
+               alt="Ilustrace palubní desky se dvěma budíky pro rychlost a výšku a grafem průběhu letu">
+          <h3 lang="en">War Thunder Telemetry Dashboard</h3>
+          <p>Aplikace v Javě, která čte živá data z API hry War Thunder a ukazuje je na přehledné palubní desce.
+             V testovacích jízdách umí přepsat i herní hodnoty, třeba výšku nebo rychlost.</p>
+          <ul class="tags" aria-label="Použité technologie">
+            <li>Java</li>
+            <li>Swing</li>
+            <li>REST API</li>
+            <li>Jackson</li>
+          </ul>
+          <a href="https://github.com/Meko-lol/Projekt_WT_Devmenu">Zdrojový kód aplikace <span lang="en">War Thunder Telemetry Dashboard</span> na GitHubu</a>
+        </article>
+
+        <article class="card project">
+          <img src="img/prisoner-of-the-depths.svg" width="320" height="180"
+               alt="Ilustrace mapy podzemí: šest místností propojených chodbami, jedna z nich svítí jako východ">
+          <h3 lang="en">Prisoner of the Depths</h3>
+          <p>Textová adventura, ve které utíkáte z podzemní trpasličí ruiny. Mapa se při každé hře náhodně
+             vygeneruje a místnosti, předměty i postavy se načítají ze souborů JSON.</p>
+          <ul class="tags" aria-label="Použité technologie">
+            <li>Java</li>
+            <li>JSON</li>
+            <li>návrhový vzor Command</li>
+          </ul>
+          <a href="https://github.com/Meko-lol/Projekt">Zdrojový kód hry <span lang="en">Prisoner of the Depths</span> na GitHubu</a>
+        </article>
+
+        <article class="card project">
+          <img src="img/homelab.svg" width="320" height="180"
+               alt="Ilustrace serverové skříně se třemi servery a svítícími kontrolkami">
+          <h3>Domácí server (homelab)</h3>
+          <p>Vlastní server, na kterém běží služby na subdoménách jpetrak.dev: Gitea pro repozitáře,
+             Jellyfin jako mediální server a Homarr jako přehledová nástěnka.</p>
+          <ul class="tags" aria-label="Použité technologie">
+            <li>self-hosting</li>
+            <li>Linux</li>
+            <li>sítě</li>
+            <li>domény</li>
+          </ul>
+          <a href="https://gitea.jpetrak.dev">Moje Gitea s repozitáři na domácím serveru</a>
+        </article>
+      </div>
     </section>
 
     <section id="dovednosti" aria-labelledby="dovednosti-nadpis">

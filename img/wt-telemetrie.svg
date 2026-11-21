@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 180" width="320" height="180">
+  <rect width="320" height="180" fill="#14213d"/>
+  <rect x="12" y="12" width="296" height="156" rx="10" fill="#1d2d50"/>
+  <g fill="none" stroke-linecap="round">
+    <circle cx="80" cy="74" r="40" stroke="#3d5a99" stroke-width="8"/>
+    <path d="M52 102 A40 40 0 1 1 108 102" stroke="#fca311" stroke-width="8"/>
+    <line x1="80" y1="74" x2="104" y2="52" stroke="#e5e5e5" stroke-width="4"/>
+    <circle cx="240" cy="74" r="40" stroke="#3d5a99" stroke-width="8"/>
+    <path d="M212 102 A40 40 0 0 1 240 34" stroke="#4cc9f0" stroke-width="8"/>
+    <line x1="240" y1="74" x2="218" y2="56" stroke="#e5e5e5" stroke-width="4"/>
+    <polyline points="28,150 60,140 92,146 124,128 156,134 188,118 220,124 252,108 292,114" stroke="#80ed99" stroke-width="4"/>
+  </g>
+  <circle cx="80" cy="74" r="6" fill="#e5e5e5"/>
+  <circle cx="240" cy="74" r="6" fill="#e5e5e5"/>
+</svg>
