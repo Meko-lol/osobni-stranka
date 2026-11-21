@@ -151,6 +151,25 @@ nav a:hover {
   font-size: 0.875rem;
 }
 
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+caption {
+  margin-bottom: 0.5rem;
+  color: var(--muted);
+  text-align: left;
+}
+
+th,
+td {
+  padding: 0.5rem 0.5rem 0.5rem 0;
+  border-bottom: 1px solid var(--border);
+  text-align: left;
+  vertical-align: top;
+}
+
 footer {
   padding: 2rem 1rem;
   color: var(--muted);
