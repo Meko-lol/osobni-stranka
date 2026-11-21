@@ -170,6 +170,23 @@ td {
   vertical-align: top;
 }
 
+address {
+  font-style: normal;
+}
+
+.contact-list {
+  padding: 0;
+  list-style: none;
+}
+
+/* větší plocha na kliknutí */
+.project a,
+.contact-list a {
+  display: inline-block;
+  padding: 0.25rem 0;
+  overflow-wrap: anywhere;
+}
+
 footer {
   padding: 2rem 1rem;
   color: var(--muted);
