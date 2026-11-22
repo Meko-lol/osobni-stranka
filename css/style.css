@@ -42,6 +42,7 @@ h2 {
 
 a {
   color: var(--link);
+  transition: color 0.2s;
 }
 
 a:hover {
@@ -272,7 +273,15 @@ footer {
 }
 
 @media (prefers-reduced-motion: reduce) {
-  /* TODO */
+  html {
+    scroll-behavior: auto;
+  }
+  .card {
+    animation: none;
+  }
+  a {
+    transition: none;
+  }
 }
 
 @media (prefers-reduced-transparency: reduce) {
