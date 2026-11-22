@@ -235,8 +235,27 @@ footer {
   }
 }
 
+/* kontrast aspoň 7:1 (AAA) */
 @media (prefers-contrast: more) {
-  /* TODO */
+  :root {
+    --bg: #fff;
+    --bg-image: none;
+    --text: #000;
+    --muted: #031d44;
+    --surface: #fff;
+    --border: #000;
+    --link: #7a3420;
+    --focus: #04395e;
+    --shadow: none;
+  }
+  .card,
+  nav a,
+  .tags li {
+    border-width: 2px;
+  }
+  nav a {
+    text-decoration: underline;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
