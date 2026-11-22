@@ -258,6 +258,19 @@ footer {
   }
 }
 
+/* bez tohohle by vyšší kontrast v tmavém režimu udělal bílou stránku */
+@media (prefers-color-scheme: dark) and (prefers-contrast: more) {
+  :root {
+    --bg: #000;
+    --text: #fff;
+    --muted: #f5efe6;
+    --surface: #000;
+    --border: #fff;
+    --link: #ffe066;
+    --focus: #8fc1a7;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   /* TODO */
 }
