@@ -273,7 +273,15 @@ footer {
 }
 
 @media (prefers-reduced-motion: reduce) {
-  /* TODO */
+  html {
+    scroll-behavior: auto;
+  }
+  .card {
+    animation: none;
+  }
+  a {
+    transition: none;
+  }
 }
 
 @media (prefers-reduced-transparency: reduce) {
