@@ -285,7 +285,12 @@ footer {
 }
 
 @media (prefers-reduced-transparency: reduce) {
-  /* TODO */
+  :root {
+    --surface: var(--bg);
+  }
+  .card {
+    backdrop-filter: none;
+  }
 }
 
 @media (forced-colors: active) {
