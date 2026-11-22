@@ -1,31 +1,31 @@
 # Zpráva o přístupnosti
 
-Příklady řádků nahraďte vlastními výsledky. Zapište alespoň tři skutečné nálezy
-a u každého hash commitu, který ho opravil (najdete ho v `git log --oneline`).
-
 ## Výsledky nástrojů
 
 | Nástroj | Před opravami | Po opravách |
 | --- | --- | --- |
-| Lighthouse (Accessibility) | TODO | TODO |
-| WAVE (Errors a Contrast Errors) | TODO | TODO |
-| Test klávesnicí | TODO | TODO |
+| Lighthouse (Accessibility) | 100 | 100 |
+| WAVE (Errors a Contrast Errors) | neměřeno (pouštěl jsem ho až po opravách) | 0 a 0, Alerts 0, AIM score 10/10 |
+| Test klávesnicí | všechno jde ovládat, fokus je vidět | stejné |
 
 ## Nalezené problémy a jejich opravy
 
 | Problém | Jak jsem ho našel | Oprava (commit) | Kritérium WCAG |
 | --- | --- | --- | --- |
-| Například: odkaz „Více“ bez popisu | WAVE | `a1b2c3d` | 2.4.4 |
+| Odkazy měly po vyřešení konfliktu barvu `#d5896f` s kontrastem jen 2,41 : 1 | výpočet kontrastu | `a890c1c` | 1.4.3 |
+| S většími rozestupy textu tabulka na 320 px přetekla a objevil se vodorovný posuvník | přepsání line-height, letter-spacing a word-spacing | `2668fa6` | 1.4.12 |
+| Okraje tlačítek v navigaci měly kontrast 1,3 : 1 (v tmavém režimu 1,8 : 1) | výpočet kontrastu | `c7376d2` | 1.4.11 |
 
 ## Test media rules
 
 | Nastavení | Co jsem při emulaci viděl | V pořádku |
 | --- | --- | --- |
-| prefers-color-scheme: dark | TODO | TODO |
-| prefers-contrast: more | TODO | TODO |
-| prefers-reduced-motion: reduce | TODO | TODO |
-| prefers-reduced-transparency: reduce | TODO | TODO |
-| forced-colors: active | TODO | TODO |
+| prefers-color-scheme: dark | tmavé pozadí, světlý text, tmavé posuvníky | ano |
+| prefers-contrast: more | bílé pozadí bez přechodu, černý text, silnější okraje, podtržené odkazy | ano |
+| prefers-color-scheme: dark + prefers-contrast: more | černé pozadí, bílý text, žluté odkazy | ano |
+| prefers-reduced-motion: reduce | karty se neanimují, odkaz změní barvu hned, rolování skočí | ano |
+| prefers-reduced-transparency: reduce | karty a navigace mají plnou barvu, žádné rozostření | ano |
+| forced-colors: active | okraje karet a navigace i fokus jsou vidět | ano |
 
 ## Kritéria WCAG 2.2 úrovně A a AA
 
