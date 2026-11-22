@@ -1,7 +1,7 @@
 /* mobile first: základ je pro mobil, větší obrazovky jsou dole v @media */
 
 :root {
-  color-scheme: light;
+  color-scheme: light dark;
   --bg: #f5efe6;
   --bg-image: linear-gradient(160deg, #f7ecdc, #e7f0ea);
   --text: #031d44;
@@ -223,7 +223,15 @@ footer {
 
 @media (prefers-color-scheme: dark) {
   :root {
-    /* TODO */
+    --bg: #031d44;
+    --bg-image: linear-gradient(160deg, #031d44, #04395e);
+    --text: #f5efe6;
+    --muted: #dab785;
+    --surface: rgb(4 57 94 / 0.7);
+    --border: #1e4a72;
+    --link: #e8a58c;
+    --focus: #8fc1a7;
+    --shadow: 0 0.25rem 1.25rem rgb(0 0 0 / 0.4);
   }
 }
 
