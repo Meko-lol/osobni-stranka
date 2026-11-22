@@ -1,15 +1,20 @@
 # Osobní stránka
 
-Osobní stránka Jana Petráka, úloha Přístupnost z předmětu WA.
+Moje osobní stránka do WA (úloha Přístupnost). Je na ní něco o mně, projekty, dovednosti a kontakt.
+Stránka splňuje WCAG 2.2 AA a přizpůsobí se tomu, co má člověk nastavené v systému.
+
+Stránka: https://meko-lol.github.io/osobni-stranka/
+
+Zpráva o přístupnosti je v [ACCESSIBILITY.md](ACCESSIBILITY.md).
 
 ## Media rules
 
 | Pravidlo | Co se mění a proč |
 | --- | --- |
-| `min-width` (šířka okna) | Tři zlomy (40em, 60em, 80em): navigace se z mřížky 2×2 přeskupí do řádku a projekty z jednoho sloupce do dvou a tří, aby stránka fungovala od nejmenšího telefonu po široký monitor bez vodorovného posuvníku. |
-| `prefers-color-scheme: dark` | Proměnné v `:root` dostanou tmavé hodnoty a `color-scheme` (v CSS i `<meta>`) přepne i posuvníky a formulářové prvky, aby stránka neoslňovala lidi, kteří mají v systému tmavý režim. |
-| `prefers-contrast: more` | Text má kontrast aspoň 7 : 1 (WCAG AAA), pozadí je plné bez přechodu, okraje jsou silnější a všechny odkazy podtržené, aby se stránka dobře četla lidem se slabším zrakem. |
-| `prefers-reduced-motion: reduce` | Vypne animaci karet, přechod barvy odkazů a plynulé rolování, protože pohyb může lidem s poruchou vestibulárního systému způsobit závrať. |
-| `prefers-reduced-transparency: reduce` | Poloprůhledné pozadí karet a navigace se nahradí plnou barvou a zmizí rozostření (`backdrop-filter`), protože průsvitné plochy zhoršují čitelnost a soustředění. |
-| `forced-colors: active` | Karty, tlačítka navigace a fokus dostanou okraj nebo `outline` v systémových barvách (`CanvasText`, `Highlight`), protože stíny v režimu vysokého kontrastu ve Windows mizí. |
-| Kombinace `prefers-color-scheme: dark` and `prefers-contrast: more` | Černé pozadí, bílý text a žluté odkazy, protože samotné pravidlo pro vyšší kontrast by lidem s tmavým režimem vrátilo bílou stránku. |
+| `min-width` (40em, 60em, 80em) | Na mobilu je navigace 2×2 a projekty pod sebou, na větším displeji jsou vedle sebe, aby nikde nebyl vodorovný posuvník. |
+| `prefers-color-scheme: dark` | Tmavé barvy i posuvníky (`color-scheme`), aby stránka v tmavém režimu neoslňovala. |
+| `prefers-contrast: more` | Kontrast aspoň 7 : 1, bez přechodu v pozadí, silnější okraje a podtržené odkazy, aby se to líp četlo. |
+| `prefers-reduced-motion: reduce` | Vypne animaci karet, přechod odkazů a plynulé rolování, protože pohyb může někomu dělat špatně. |
+| `prefers-reduced-transparency: reduce` | Karty mají plnou barvu bez rozostření, protože průhledné pozadí se hůř čte. |
+| `forced-colors: active` | Okraje a fokus v systémových barvách, protože stíny v tomhle režimu zmizí. |
+| `dark` and `prefers-contrast: more` | Černé pozadí, bílý text a žluté odkazy, jinak by vyšší kontrast v tmavém režimu udělal bílou stránku. |
