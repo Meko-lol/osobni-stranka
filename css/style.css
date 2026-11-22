@@ -85,8 +85,8 @@ main {
 }
 
 nav ul {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   gap: 0.5rem;
   padding: 0;
   list-style: none;
@@ -194,15 +194,31 @@ footer {
 }
 
 @media (min-width: 40em) {
-  /* TODO */
+  nav ul {
+    display: flex;
+  }
+  .project-list {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 @media (min-width: 60em) {
-  /* TODO */
+  h1 {
+    font-size: 2.75rem;
+  }
+  .project-list {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 
 @media (min-width: 80em) {
-  /* TODO */
+  html {
+    font-size: 112.5%;
+  }
+  .site-header,
+  main {
+    max-width: 80rem;
+  }
 }
 
 @media (prefers-color-scheme: dark) {
