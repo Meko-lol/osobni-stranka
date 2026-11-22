@@ -293,6 +293,13 @@ footer {
   }
 }
 
+/* box-shadow tady zmizí, proto okraje a outline systémovými barvami */
 @media (forced-colors: active) {
-  /* TODO */
+  .card,
+  nav a {
+    border: 2px solid CanvasText;
+  }
+  :focus-visible {
+    outline: 3px solid Highlight;
+  }
 }
