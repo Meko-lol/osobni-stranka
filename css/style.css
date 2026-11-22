@@ -235,8 +235,40 @@ footer {
   }
 }
 
+/* kontrast aspoň 7:1 (AAA) */
 @media (prefers-contrast: more) {
-  /* TODO */
+  :root {
+    --bg: #fff;
+    --bg-image: none;
+    --text: #000;
+    --muted: #031d44;
+    --surface: #fff;
+    --border: #000;
+    --link: #7a3420;
+    --focus: #04395e;
+    --shadow: none;
+  }
+  .card,
+  nav a,
+  .tags li {
+    border-width: 2px;
+  }
+  nav a {
+    text-decoration: underline;
+  }
+}
+
+/* bez tohohle by vyšší kontrast v tmavém režimu udělal bílou stránku */
+@media (prefers-color-scheme: dark) and (prefers-contrast: more) {
+  :root {
+    --bg: #000;
+    --text: #fff;
+    --muted: #f5efe6;
+    --surface: #000;
+    --border: #fff;
+    --link: #ffe066;
+    --focus: #8fc1a7;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
