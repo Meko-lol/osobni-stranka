@@ -7,7 +7,7 @@
   --text: #031d44;
   --muted: #04395e;
   --surface: rgb(255 255 255 / 0.65);
-  --border: #e3d5bf;
+  --border: #8a7456;
   --link: #9c4a2f;
   --focus: #04395e;
   --shadow: 0 0.25rem 1.25rem rgb(3 29 68 / 0.08);
@@ -230,7 +230,7 @@ footer {
     --text: #f5efe6;
     --muted: #dab785;
     --surface: rgb(4 57 94 / 0.7);
-    --border: #1e4a72;
+    --border: #7f9bb5;
     --link: #e8a58c;
     --focus: #8fc1a7;
     --shadow: 0 0.25rem 1.25rem rgb(0 0 0 / 0.4);
